@@ -15,9 +15,9 @@ Tujuan permainan congklak adalah mendapatkan biji sebanyak banyaknya di dalam "b
 //  
 Tampilan awal:  
 P0--0--1--2--3--4--5--6---    >   Menunjukan index untuk bermain sebagai Player0 atau Pemain0  
-   07 07 07 07 07 07 07  
+   07 07 07 07 07 07 07       >   Jumlah biji Pemain0
 00|                    |00    >   Disebelah kiri adalah "bank" milik pemain0, dan di kanan milik pemain1  
-   07 07 07 07 07 07 07  
+   07 07 07 07 07 07 07       >   Jumlah biji pemain1
 P1--6--5--4--3--2--1--0---    >   Menunjukan index untuk bermain sebagai Player1 atau Pemain1  
   
 Pemain 0 Melangkah Dari:      >   Pemain yang sedang giliran jalan diminta memasukan index dari "field" yang ingin dimainkan  
@@ -37,11 +37,13 @@ Jika berhenti di "field" sendiri yang kosong, pemain berhak "nembak", yaitu meng
 Jika berhenti di "field: musuh yang kosong, maka langsung ganti giliran  
   
   
+  
 //  
+untuk versi Congklak.java:  
+//
 Winning Condition:  
 Jika seluruh "field" salah satu pemain telah kosong, permainan berhenti  
 Pemain dengan jumlah biji di "field" + "bank" terbanyak akan menang  
-  
   
 //  
 Yang tidak dibuat:  
@@ -50,3 +52,12 @@ Hal ini tidak diimplementasikan karena:
 -Pada real world scenario, kebanyakan orang sudah bosan bahkan sebelum babak pertama selsai.  
   
 -Jika kedua pemain sama sama sudah ahli, permainan bisa jadi tidak akan pernah selsai karena pemain yang sedang "ngacang" memiliki banyak advantage untuk membalik keadaan, dan seterusnya. permainan yang berlangsung terus menerus dikhawatirkan menghasilkan error yang tidak terduga seperti out of memory error.  
+  
+    
+      
+//
+Untuk versi CongklakUnlimited.java:  
+Versi ini dibuat semirip mungkin dengan permainan congklak asli, dan mengimplementasikan sistem ronde berkelanjutan serta sistem "ngacang". Versi ini cocok untuk kamu yang HARDCORE dalam bermain congklak. Hal hal mengenai sistem ronde berkelanjutan dan "ngacang" dapat dibaca pada link aturan di atas.
+  
+//Winning Condition:  
+Pemain yang berhasil menghabisi biji lawan, atau mengurangi total biji lawan sampai dibawah 28 biji pada saat ronde selsai akan memenangkan pertandingan.
