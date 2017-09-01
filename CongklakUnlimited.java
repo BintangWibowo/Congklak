@@ -38,7 +38,8 @@ public class CongklakUnlimited
 	    		//print board setelah satu langkah selsai, untuk antisipasi (mungkin akan doble print dengan yang ada di eval)
 	    		b.print();
 	    	}
-
+	    	System.out.println("Ronde baru dimulai, Papan di reset");
+		b.print();
 	    	b.refill(b.getPlayer(0).countAll(), b.getPlayer(1).countAll());
     	}
 
