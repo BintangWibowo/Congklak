@@ -53,9 +53,9 @@ Hal ini tidak diimplementasikan karena:
   
 -Jika kedua pemain sama sama sudah ahli, permainan bisa jadi tidak akan pernah selsai karena pemain yang sedang "ngacang" memiliki banyak advantage untuk membalik keadaan, dan seterusnya. permainan yang berlangsung terus menerus dikhawatirkan menghasilkan error yang tidak terduga seperti out of memory error.  
   
-    
-      
-//
+  
+  
+//  
 Untuk versi CongklakUnlimited.java:  
 Versi ini dibuat semirip mungkin dengan permainan congklak asli, dan mengimplementasikan sistem ronde berkelanjutan serta sistem "ngacang". Versi ini cocok untuk kamu yang HARDCORE dalam bermain congklak. Hal hal mengenai sistem ronde berkelanjutan dan "ngacang" dapat dibaca pada link aturan di atas.  
   
