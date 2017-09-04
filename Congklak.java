@@ -170,9 +170,9 @@ class Board
 			if(this.active == this.cursor)
 			{
 				shoot(idx);
+				this.setCursor();
 			}
 			this.setPlayer();
-			this.setCursor();
 			this.print();
 			return;
 		}
