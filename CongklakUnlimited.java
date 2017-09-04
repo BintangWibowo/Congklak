@@ -213,24 +213,27 @@ class Board
 			return;
 		}
 		
-		if(cursor.getField()[idx] == 1)
-		{
-			if(this.active == this.cursor && !this.active.ngacang[idx])
-			{
-				shoot(idx);
-			}
-			this.setPlayer();
-			this.setCursor();
-			this.print();
-			return;
-		}
-
 		if(cursor.ngacang[idx]){
 			this.setPlayer();
 			this.setCursor();
 			this.print();
 			return;
 		}
+		
+		if(cursor.getField()[idx] == 1)
+		{
+			if(this.active == this.cursor && !this.active.ngacang[idx])
+			{
+				shoot(idx);
+				this.setCursor();
+			}
+			this.setPlayer();
+			
+			this.print();
+			return;
+		}
+
+		
 
 		this.print();
 		this.take(idx);
