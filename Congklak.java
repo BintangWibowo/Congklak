@@ -110,6 +110,12 @@ class Board
 	//fungsi take untuk mengambil biji pada suatu lobang
 	public void take(int idx)
 	{
+		if(idx < 0 || idx > 6)
+		{
+			System.out.println("Bolehnya 0 sampe 6 om :(");
+			return;
+		}
+		
 		if(cursor.getField()[idx] == 0)
 		{
 			System.out.println("Kosong Om :(");
